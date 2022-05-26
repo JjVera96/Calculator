@@ -52,6 +52,8 @@
             this.title = new System.Windows.Forms.Label();
             this.history = new System.Windows.Forms.Label();
             this.screen = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sign
@@ -410,12 +412,23 @@
             this.screen.Text = "0";
             this.screen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(342, 540);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 46F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(402, 593);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.screen);
             this.Controls.Add(this.history);
             this.Controls.Add(this.title);
@@ -452,6 +465,7 @@
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Calculator -JV";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -481,5 +495,6 @@
         private Label title;
         private Label history;
         private Label screen;
+        private PictureBox pictureBox1;
     }
 }

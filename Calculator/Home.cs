@@ -192,7 +192,11 @@ namespace Calculator
                 screen.Text = screen.Text.Remove(screen.Text.Length - 1).ToString();
 
             }
-            else
+            else 
+            {
+                screen.Text = "0";
+            }
+            if (screen.Text == "-")
             {
                 screen.Text = "0";
             }
